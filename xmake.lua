@@ -1,0 +1,8 @@
+target("wheel-vdb-server") 
+    set_kind("binary")
+    add_files("src/main.cc")
+    set_languages("cxxlatest")
+    set_toolchains("gcc")
+    set_policy("build.c++.modules", true)
+    set_policy("build.c++.gcc.modules.cxx11abi", true)
+target_end()
